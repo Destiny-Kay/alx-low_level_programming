@@ -1,1 +1,1 @@
-This folder contains introductory shell scripts for the preprocessor,compiler, assembler and more
+This folder contains introductory scripts to c low level programming

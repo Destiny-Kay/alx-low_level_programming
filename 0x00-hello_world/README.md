@@ -1,0 +1,1 @@
+This folder contains introductory shell scripts for the preprocessor,compiler, assembler and more

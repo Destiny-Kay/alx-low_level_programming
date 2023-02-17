@@ -1,4 +1,4 @@
-#includ <stdio.h>
+#include <stdio.h>
 /**
  *main -entry point
  *return 0 - success
@@ -7,9 +7,8 @@
 int main (void)
 {
   char c;
-  char c = 'z';
   
-    for(i = 'z';i >= 'a'; i--)
+    for(c = 'z';c >= 'a'; c--)
       {
 	putchar(c);
       }

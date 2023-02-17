@@ -18,7 +18,7 @@ int main ()
   while (u <= 'Z')
     {
       putchar(u);
-      u++
+      u++;
     }
   putchar('\n');
   return 0;

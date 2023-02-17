@@ -5,6 +5,7 @@
 /*main prints a random number to n each time it is xecuted*/
 /**
 *main - entry point
+*return 0 - success
 */
 int main(void)
 {

@@ -1,22 +1,23 @@
 #include <stdio.h>
 /**
  *main - entry point
- *return 0- success
+ *Description:prints the alphabet in order
+ *Return: 0- success
  *
  */
-int main ()
+int main(void)
 {
-  char c;
-  c = 'a';
+char c;
+c = 'a';
 
-  while (c <= 'z')
-    {
-      if ((c != 'q' && c != 'e') && c <= 'z')
-	{
-	  putchar(c);
-	}
-      c++;
-    }
-  putchar('\n');
-  return (0);
+while (c <= 'z')
+{
+if ((c != 'q' && c != 'e') && c <= 'z')
+{
+putchar(c);
+}
+c++;
+}
+putchar('\n');
+return (0);
 }

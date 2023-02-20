@@ -10,7 +10,7 @@ char c;
 c = 'a';
 while (c <= 'z')
 {
-utchar(c);
+putchar(c);
 c++;
 }
 putchar('\n');

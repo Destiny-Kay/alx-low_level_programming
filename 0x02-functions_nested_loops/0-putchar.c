@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<main.h>
 /**
  *main- a function that prints putchar on stdout
  *Description: prints out text

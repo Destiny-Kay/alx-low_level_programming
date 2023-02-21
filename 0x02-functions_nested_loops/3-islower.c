@@ -10,18 +10,9 @@
  */
 int _islower(int c)
 {
-int i;
-for (i = 'a'; i <= 'z'; i++)
-{
-if (i == c)
+if (c >= 97 && c <= 122)
 {
 return (1);
-break;
 }
-else
-{
-return (0);
-break;
-}
-}
+return(0);
 }

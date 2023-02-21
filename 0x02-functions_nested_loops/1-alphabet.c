@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  *main - returns alphabets in lowercase followed by a new line

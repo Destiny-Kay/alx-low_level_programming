@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include<main.h>
 /**
  *main- a function that prints putchar on stdout
@@ -8,6 +7,6 @@
  */
 int main(void)
 {
-printf("_putchar\n");
+_putchar("_putchar\n");
 return (0);
 }

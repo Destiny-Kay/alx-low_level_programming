@@ -13,7 +13,6 @@ for (i; i <= 57; i++)
 if (i != 50 && i != 52)
 {
 _putchar(i);
-i++;
 }
 }
 _putchar("\n");

@@ -22,5 +22,5 @@ for (; k < j; k++)
 {
 _putchar(str[k]);
 }
--putchar('\n');
+_putchar('\n');
 }

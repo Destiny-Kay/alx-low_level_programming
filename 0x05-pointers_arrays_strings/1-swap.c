@@ -1,4 +1,4 @@
-#include "main.h";
+#include "main.h"
 /**
  *swap_int-swaps the values of two ineger numbers
  *@a: iteger value 1
@@ -9,6 +9,6 @@ void swap_int(int *a, int *b)
 {
 int temp;
 temp = *a;
-*b = *a;
 *a = *b;
+*b = *temp;
 }

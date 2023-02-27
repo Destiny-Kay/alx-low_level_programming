@@ -5,9 +5,11 @@
  *@s: astring of characters
  *Return: the length of a string
  */
+
 int _strlen(char *s)
 {
 int len;
+len = 1;
 while (*s++)
 {
 len++;

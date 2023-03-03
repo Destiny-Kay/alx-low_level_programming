@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- *
- *
- *
+ *cap_string- capitalizes all words in a string
+ *@str:a string to be capitalized
+ *Return: the capitalised string
  */
 
-char *cap_string(char *)
+char *cap_string(char *str)
 {
-nt i = 0;
+int i = 0;
 
 while (str[i])
 {

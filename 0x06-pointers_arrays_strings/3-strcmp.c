@@ -3,19 +3,14 @@
  *_strcmp- compares two strings
  *@s1: string one
  *@s2: string two
- *Return: !matching strings
+ *Return: difference between the strings
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
-
-	while (s1[i] != '\0' && s2[i] != '\0')
+	while (*s1 && *s2 && *s1 == s2)
 	{
-		if (s1[i] != S2[i])
-		{
-		return (s1[i] = s2[i]);
-		}
-		i++;
+		s1++;
+		s2++;
 	}
-	return (0);
+	return (*s1 - *s2);
 }

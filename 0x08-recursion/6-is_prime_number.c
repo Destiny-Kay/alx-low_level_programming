@@ -14,7 +14,7 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (prime, n - 1);
+	return (prime(n, n - 1));
 }
 
 int prime(int n, int i)
@@ -27,5 +27,5 @@ int prime(int n, int i)
 	{
 		return (0);
 	}
-	return (n, i - 1)
+	return (prime(n, i - 1));
 }

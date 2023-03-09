@@ -14,7 +14,7 @@ if (y < 0)
 }
 else if (y == 1)
 {
-	return (x);
+	return (1);
 }
 return (x * _pw_recursion(x, y - 1));
 }

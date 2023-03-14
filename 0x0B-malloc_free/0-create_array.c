@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "main.h"
 
 /**
  *create_array- creates an array of characters and initializes the array with c
@@ -8,14 +9,19 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	if(size == 0)
+	char *ch;
+	int i;
+
+	i = 0;
+	if (size == 0)
 	{
 		return (0);
 	}
-	char *ch = (char)malloc(sizeof(char) * size);
-	while(i < size)
+	ch = malloc(sizeof(char) * size);
+	while (i < size)
 	{
 		_putchar(ch);
+		i++;
 	}
 	free(ch);
 }

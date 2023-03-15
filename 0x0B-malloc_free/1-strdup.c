@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	buffer = (char *)malloc(sizeof(char) * (i + 1));
 
 
-	if (str == '')
+	if (str == NULL)
 	{
 		return (NULL);
 	}

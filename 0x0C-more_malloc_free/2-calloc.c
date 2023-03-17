@@ -26,6 +26,7 @@ if (mem == NULL)
 while (i < (size * nmemb))
 {
 	mem[i] = 0;
+	i++;
 }
 
 

@@ -11,16 +11,23 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-void mem = malloc(size * nmemb);
+unsigned int i = 0;
+char *mem = malloc(size * nmemb);
 
 if (nmemb == 0 || size == 0)
 {
 	return (NULL);
 }
-if (!mem)
+if (mem == NULL)
 {
 	return (NULL);
 }
+
+while (i < (size * nmemb))
+{
+	mem[i] = 0;
+}
+
 
 return (mem);
 }

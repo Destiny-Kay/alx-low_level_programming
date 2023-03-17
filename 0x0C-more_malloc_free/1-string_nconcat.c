@@ -47,6 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		j++;
 		i++;
 	}
+
 	if (n < sizes2)
 	{
 		concatented[i] = '\0';

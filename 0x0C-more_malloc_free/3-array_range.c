@@ -22,17 +22,14 @@ int *array_range(int min, int max)
 
 	numelements = max - min + 1;
 
-	arr = (int *)malloc(numelements);
+	arr = malloc(sizeof(int) * numelements);
 
 	if (arr == NULL)
 		return (NULL);
-	int j = min;
-
 	while (i < numelements)
 	{
-		arr[i] = j;
+		arr[i] = min++;
 		i++;
-		j++;
 	}
 	return (arr);
 }

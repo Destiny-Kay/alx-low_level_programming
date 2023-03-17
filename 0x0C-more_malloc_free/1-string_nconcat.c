@@ -12,31 +12,45 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int s1size = sizeof(s1);
-	int charsize = (s1size + n);
-	int i = 0;
+	int sizes1 = 0;
+	int sizes2 = 0;
 
-	char *concatenated = (char *)malloc(sizeof(char) * charsize);
+	while (s1[sizes1] != '\0')
+	{
+		sizes1++;
+	}
+	while (s2[sizes2] != '\0')
+	{
+		sizes2++;
+	}
 
-	if (concatenated == NULL)
+	int totalsize = sizes1 + n + 1;
+	int *concString = (char *)malloc(totalsize);
+
+	if (concString == NULL)
 	{
 		return (NULL);
 		exit(1);
 	}
-	while (i < s1size)
+
+	int i = 0;
+
+	while (i <= sizes1)
 	{
-		concatenated[i] = s1[i];
+		concString[i] = s1[i];
 		i++;
 	}
 	while (i <= n)
 	{
-		concatenated[i] = s2[i];
+		int j = 0;
+		concatenated[i] = s2[j];
+		j++;
 		i++;
 	}
-	if (n < sizeof(s2))
+	if (n < sizes2)
 	{
 		concatented[i] = '\0';
 	}
 
-	return (concatenated);
+	return (concstring);
 }

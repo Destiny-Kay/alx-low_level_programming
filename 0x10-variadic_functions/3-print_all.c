@@ -1,12 +1,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
-
 /**
  *print_all- prints anything
  *@format: the specified format to be printed
- *Return: void
- *
  */
 void print_all(const char * const format, ...)
 {
@@ -26,7 +23,7 @@ void print_all(const char * const format, ...)
 				printf(", ");
 				break;
 			}
-			j++;
+		j++;
 		}
 		switch (format[i])
 		{

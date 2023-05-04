@@ -6,6 +6,12 @@
 int stringLength(const char *c);
 int power(int base, int exponent);
 
+/**
+ *binary_to_uint- converts a binary number to an unsigned int
+ *@b: a string to be converted
+ *Return: an unsigned int on success, 0 on fail
+ *
+ */
 unsigned int binary_to_uint(const char *b)
 {
 	int i;
@@ -36,6 +42,12 @@ unsigned int binary_to_uint(const char *b)
 	return (result);
 }
 
+/**
+ *stringLength- returns the length of a string
+ *@c: a string of character
+ *Return: number of characters
+ *
+ */
 int stringLength(const char *c)
 {
 	int length = 0;
@@ -47,6 +59,12 @@ int stringLength(const char *c)
 	return (length);
 }
 
+/**
+ *power- returns the exponent of a number
+ *@base: the base number to  be raised to an exponent
+ *@exponent: the exponent
+ *Return: the result of the calculation
+ */
 int power(int base, int exponent)
 {
 	int result = 1;

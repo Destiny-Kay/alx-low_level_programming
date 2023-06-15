@@ -2,36 +2,19 @@
 #include <stdlib.h>
 
 /**
- *_calloc-allocates memory for an array
- *@nmemb:array elements
- *@size:the size oeach element in the array
- *Return: the pointer to a memory location, NULL if allocation fails
- *
- */
-
+ * _calloc- allocates memory to array using malloc
+ * @nmemb: Array elements
+ * @size: bytes to be allocated
+ * Return:  NULL
+*/
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-unsigned int i = 0;
-char *mem;
+	void *memloc;
 
-if (nmemb == 0 || size == 0)
-{
-	return (NULL);
-}
+	memloc = malloc(nmemb * size);
+	if (memloc == NULL)
+		return (NULL);
 
-mem = malloc(size * nmemb);
-
-if (mem == NULL)
-{
-	return (NULL);
-}
-
-while (i < (size * nmemb))
-{
-	mem[i] = 0;
-	i++;
-}
-
-
-return (mem);
+	return (memloc);
+	free(memloc);
 }

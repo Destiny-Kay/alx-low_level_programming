@@ -1,1 +1,2 @@
-more malloc in c
+#C more malloc tasks
+An implementation of the malloc function in c programming

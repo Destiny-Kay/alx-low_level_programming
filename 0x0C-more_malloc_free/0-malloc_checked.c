@@ -2,19 +2,16 @@
 #include <stdlib.h>
 
 /**
- *malloc_checked- allocated a memory segment
- *@b:the size if memory(int)
- *Return: pointer to the allocated memory
+ * malloc_checked- allocates memeory using malloc
+ * @b: the size of memory to be allocated
  *
- */
+*/
 
 void *malloc_checked(unsigned int b)
 {
-void *ptr = malloc(b);
+	void *ptr = malloc(b);
 
-if (ptr == NULL)
-{
-	exit(98);
-}
-return (ptr);
+	if (ptr == NULL)
+		exit(98);
+	return (ptr);
 }

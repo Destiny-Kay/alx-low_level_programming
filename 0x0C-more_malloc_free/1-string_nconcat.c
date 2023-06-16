@@ -16,14 +16,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *string2 = checkNULL(s2);
 	unsigned int newlen, i = 0, j = 0;
 
-	newlen = stringLength(string1) + n;
 	if (n >= stringLength(string2))
 		n = stringLength(string2);
 
 
 	newlen = stringLength(string1) + n;
 
-	concat_string = malloc(sizeof(*concat_string) * newlen);
+	concat_string = malloc((sizeof(*concat_string) * newlen) + 1);
 	if (concat_string == NULL)
 		return (NULL);
 	while (string1[i] != '\0')

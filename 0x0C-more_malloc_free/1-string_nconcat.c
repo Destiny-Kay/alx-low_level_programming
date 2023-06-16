@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 unsigned int stringLength(char *s);
+char *checkNULL(char *s);
 /**
  * string_nconcat- concatenates two strings
  * @s1: first string
@@ -11,24 +12,28 @@ unsigned int stringLength(char *s);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concat_string;
-	unsigned int newlen = stringLength(s1) + n, i = 0, j = 0;
+	char *string1 = checkNULL(s1);
+	char *string2 = checkNULL(s2);
+	unsigned int newlen, i = 0, j = 0;
 
-	if (n >= stringLength(s2))
-		n = stringLength(s2);
+	newlen = stringLength(string1) + n;
+	if (n >= stringLength(string2))
+		n = stringLength(string2);
 
-	newlen = stringLength(s1) + n;
+
+	newlen = stringLength(string1) + n;
 
 	concat_string = malloc(sizeof(*concat_string) * newlen);
 	if (concat_string == NULL)
 		return (NULL);
-	while (s1[i] != '\0')
+	while (string1[i] != '\0')
 	{
-		concat_string[i] =  s1[i];
+		concat_string[i] =  string1[i];
 		i++;
 	}
 	while (j <= n)
 	{
-		concat_string[i] = s2[j];
+		concat_string[i] = string2[j];
 		j++;
 		i++;
 	}
@@ -48,4 +53,15 @@ unsigned int stringLength(char *s)
 	while (s[i] != '\0')
 		i++;
 	return (i);
+}
+/**
+ * checkNULL- checks whether a string is NULL
+ * @s: string to be checked
+ * Return: "" if NULL and the string otherwise
+*/
+char *checkNULL(char *s)
+{
+	if (s == NULL)
+		return ("");
+	return (s);
 }

@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		}
 		sum += a;
 	}
-		printf("%d \n", sum);
+		printf("%d\n", sum);
 		return (0);
 	}
 	printf("0\n");

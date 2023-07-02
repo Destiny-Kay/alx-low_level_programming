@@ -24,8 +24,6 @@ int *array_range(int min, int max)
 	{
 		newarr[i] = min + i;
 		i++;
-		/**printf("%d\n", i);
-		printf("%d", min);*/
 	}
 	return (newarr);
 	free(newarr);

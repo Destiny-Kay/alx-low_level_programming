@@ -11,20 +11,19 @@
 int *array_range(int min, int max)
 {
 	int *newarr;
-	int range = (max - min) + 1, i = 0;
+	int i, size;
 
-	if (range < 0)
+	size = max - min + 1;
+
+	if (min > max)
 		return (NULL);
-	printf("%d\n", range);
-	newarr = malloc(sizeof(newarr) * range);
-	printf("%ld\n", sizeof(newarr) * range);
+
+	newarr = malloc(sizeof(int) * size);
+
 	if (newarr == NULL)
 		return (NULL);
-	while (i < range)
-	{
-		newarr[i] = min + i;
-		i++;
-	}
+
+	for (i = 0; min <= max; i++)
+		newarr[i] = min++;
 	return (newarr);
-	free(newarr);
 }

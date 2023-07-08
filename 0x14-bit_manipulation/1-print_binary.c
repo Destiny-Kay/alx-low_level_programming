@@ -13,7 +13,8 @@ void print_binary(unsigned long int n)
 	{
 		print_binary(divide_by_2(n));
 	}
-	print_longint((n - (divide_by_2(n) * 2)));
+	/*print_longint((n - (divide_by_2(n) * 2)));*/
+	_putchar('0' + (n - (divide_by_2(n) * 2)));
 }
 
 /**
@@ -31,19 +32,4 @@ int divide_by_2(unsigned int n)
 		i++;
 	}
 	return (i);
-}
-
-/**
- * print_longint- prints a string to the standard output
- * @num: the number to be printed
- * Return: void
-*/
-void print_longint(unsigned long int num)
-{
-	if (num >= 10)
-	{
-		print_longint(num / 10);
-	}
-
-	_putchar('0' + (num % 10));
 }

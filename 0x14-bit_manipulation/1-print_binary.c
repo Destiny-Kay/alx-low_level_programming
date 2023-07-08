@@ -13,7 +13,6 @@ void print_binary(unsigned long int n)
 	{
 		print_binary(divide_by_2(n));
 	}
-	/*print_longint((n - (divide_by_2(n) * 2)));*/
 	_putchar('0' + (n - (divide_by_2(n) * 2)));
 }
 

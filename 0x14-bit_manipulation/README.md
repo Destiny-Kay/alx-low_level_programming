@@ -1,2 +1,2 @@
 # Bit manipulation in C
-Using the c programming language to perform bitwise operations
+A series of exercises to get farmiliar with bit manipulation tasks in the C programming language

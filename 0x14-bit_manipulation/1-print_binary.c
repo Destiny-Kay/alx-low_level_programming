@@ -1,34 +1,24 @@
 #include "main.h"
-#include <stdio.h>
-int divide_by_2(unsigned int n);
+
+
 /**
- * print_binary- prints a binary representation of a number
- * @n: the numbe rto be converted
- * Return: the binary representation of a number
- *
+ * print_binary- prints the binay representation of a number
+ * @n: a number
+ * Return: the binary rep of the number n
 */
 void print_binary(unsigned long int n)
 {
-	if (n > 1)
-	{
-		print_binary(divide_by_2(n));
-	}
-	_putchar('0' + (n - (divide_by_2(n) * 2)));
-}
+	int bit, msb = 1;
 
-/**
- * divide_by_2- perfoms a floor division on a number
- * @n: the number to be divided by 2
- * Return: the quotient
-*/
-int divide_by_2(unsigned int n)
-{
-	int i = 0;
-
-	while (n >= 2)
+	while ((n >> msb) != 0)
 	{
-		n -= 2;
-		i++;
+		msb++;
 	}
-	return (i);
+	msb--;
+
+	for (msb = msb; msb >= 0; msb--)
+	{
+		bit = (n >> msb) & 1;
+		_putchar('0' + bit);
+	}
 }

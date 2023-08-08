@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 {
 	int file_from, file_to, err_close;
 	ssize_t nchars, nwr;
-	char buf[1024];
+	char buf[BUFFER];
 
 	if (argc != 3)
 	{
@@ -45,10 +45,10 @@ int main(int argc, char *argv[])
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	err_f(file_from, file_to, argv);
 
-	nchars = 1024;
-	while (nchars == 1024)
+	nchars = BUFFER;
+	while (nchars == BUFFER)
 	{
-		nchars = read(file_from, buf, 1024);
+		nchars = read(file_from, buf, BUFFER);
 		if (nchars == -1)
 			err_f(-1, 0, argv);
 		nwr = write(file_to, buf, nchars);

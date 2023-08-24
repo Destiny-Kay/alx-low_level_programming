@@ -272,10 +272,10 @@ void close_elf(int elf)
  */
 int main(int argc, char *argv[])
 {
-	(void)argc;
 	Elf64_Ehdr *header;
 	int o, r;
 
+	(void)argc;
 	o = open(argv[1], O_RDONLY);
 	if (o == -1)
 	{

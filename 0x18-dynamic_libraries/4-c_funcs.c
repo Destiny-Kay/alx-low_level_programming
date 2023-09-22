@@ -1,12 +1,12 @@
 #include "main.h"
 
-#include "main.h"
-
-#include "main.h"
-
 
 /**
- * func_prototype
+ * _memcpy- memcpy prototype
+ * @dest: destination
+ * @src: the source
+ * @n: int
+ * Return: string
 */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -14,7 +14,10 @@ return (0);
 }
 
 /**
- * func_prototype
+ * _strchr- strchr prototype
+ * @s: string
+ * @c: char
+ * Return: string
 */
 char *_strchr(char *s, char c)
 {
@@ -22,7 +25,10 @@ return (0);
 }
 
 /**
- * func_prototype
+ * _strspn- strspn prototype
+ * @s: string
+ * @accept: astring
+ * Return: int
 */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -30,7 +36,10 @@ return (0);
 }
 
 /**
- * func_prototype
+ * _strpbrk- strbbrk prototype
+ * @s: string
+ * @accept: string
+ * Return: string
 */
 char *_strpbrk(char *s, char *accept)
 {
@@ -38,7 +47,10 @@ return (0);
 }
 
 /**
- * func_prototype
+ * _strstr- strstr prototype
+ * @haystack: string
+ * @needle: string
+ * Return: string
 */
 char *_strstr(char *haystack, char *needle)
 {

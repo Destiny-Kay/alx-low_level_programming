@@ -2,7 +2,9 @@
 
 
 /**
- * func_prototype
+ * _isdigit- is_digit prototype
+ * @c: int
+ * Return: an int
 */
 int _isdigit(int c)
 {
@@ -10,7 +12,9 @@ return (0);
 }
 
 /**
- * func_prototype
+ * _strlen- strlen prototype
+ * @s: a string
+ * Return: int
 */
 int _strlen(char *s)
 {
@@ -18,7 +22,9 @@ return (0);
 }
 
 /**
- * func_prototype
+ * _puts- puts prototype
+ * @s: string
+ * Return: void
 */
 void _puts(char *s)
 {
@@ -26,7 +32,10 @@ return;
 }
 
 /**
- * func_prototype
+ * _strcpy- strcpy prototype
+ * @dest: destination
+ * @src: source
+ * Return: char
 */
 char *_strcpy(char *dest, char *src)
 {
@@ -34,7 +43,9 @@ return (0);
 }
 
 /**
- * func_prototype
+ * _atoi- atoi func
+ * @s: string
+ * Return: int
 */
 int _atoi(char *s)
 {

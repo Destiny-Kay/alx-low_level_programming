@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * func_prototype
+ * _putchar- putchar prototype
+ * @c: character
+ * Return: number of chars
 */
 int _putchar(char c)
 {
@@ -8,7 +10,9 @@ return (0);
 }
 
 /**
- * func_prototype
+ * _islower-func prototype
+ * @c: character
+ * Return: int
 */
 int _islower(int c)
 {
@@ -16,7 +20,9 @@ return (0);
 }
 
 /**
- * func_prototype
+ * _isalpha- func prototype
+ * @c: char
+ * Return: prototype
 */
 int _isalpha(int c)
 {
@@ -24,7 +30,9 @@ return (0);
 }
 
 /**
- * func_prototype
+ * _abs-abs prototype
+ * @n: int
+ * Return: int
 */
 int _abs(int n)
 {
@@ -32,7 +40,9 @@ return (0);
 }
 
 /**
- * func_prototype
+ * _isupper- is_upper prototype
+ * @c: int
+ * Return: an int
 */
 int _isupper(int c)
 {
